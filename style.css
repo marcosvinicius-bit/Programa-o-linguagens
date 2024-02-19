@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+.text-flicker-out-glow {
+    -webkit-animation: text-flicker-out-glow 2.5s linear both;
+    animation: text-flicker-out-glow 2.5s linear both;
+  }
+
+body{
+    background-image: url(https://media.geeksforgeeks.org/wp-content/uploads/20190612000013/JavaScript-vs-Python.png) ;
+    background-size: cover;
+    color: #f7e700;
+    text-align: center;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1{
+    padding: 20px;
+    text-align: center;
+    font-family: myfont;
+    font-size: 2.5em;
+}
+
+
+footer{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+    
+  }
+  
+  .insta{
+    width: 24px;
+    height: 24px;
+  }
+  
+  .git{
+    width: 44px;
+    height: 24px;
+  }
+
+  .animacao{
+    animation:vaievem 2.4s alternate infinite;
+    position: absolute;
+    top: 120%;
+}
+
+p{
+    animation-duration: 2s;
+    animation-name: slidein;
+    line-height: 1.6em;
+    margin: 1%;
+    font-size: 1.2em;
+    padding: 10%;
+    text-align: justify;
+    font-size: 1.5em;
+    
+}
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+    }
+    
+    @font-face {
+        font-family: myfont;
+        src: url(fonts/dDecak.ttf) format('truetype');
+    }
+
+    @keyframes vaievem{
+        0% {transform: translateX(-100vh);}
+
+        100% {
+            transform: translateX(100vh);
+        }
+    }
+
+    
+
+   
+      
+    
+
+
+
+
+  
+
+
